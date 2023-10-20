@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&display=swap');
+
+:root{
+    --baseColor: #784cfb;
+    --fontLogo: 'Courgette', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: black;
+}
+
+
+/* main content  */
+.hero{
+    background-color: beige;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 6rem;
+}
+
+.bgimg-hero {
+    margin-top: -2.5rem;
+    position: relative;
+}
+.img-hero {
+    position: absolute;
+    top: 180px;
+    right: 150px;
+}
+.company span{
+    font-family: var(--fontLogo);
+    color: var(--baseColor);
+}

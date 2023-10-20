@@ -11,3 +11,14 @@ if (links.length) {
   });
 }
 
+
+const header = document.querySelector('#header');
+const footer = document.querySelector('#footer');
+
+fetch('header.html')
+  .then(res => res.text())
+  .then(result => {header.innerHTML = result})
+
+  fetch('footer.html')
+  .then(response => response.text())
+  .then(result => {footer.innerHTML = result})

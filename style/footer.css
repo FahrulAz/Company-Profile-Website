@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&display=swap');
+
+:root{
+    --baseColor: #784cfb;
+    --fontLogo: 'Courgette', cursive;
+}
+
+/* footer  */
+.footer{
+    background-color: black;
+}
+.link-footer{
+    color: var(--baseColor);
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.link-footer a:hover{
+    color: #ffff;
+    border-bottom: 1px solid white;
+}
+.copyright{
+    font-family: var(--fontLogo);
+    color: var(--baseColor);
+    text-decoration: none;
+}
