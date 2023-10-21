@@ -2,6 +2,9 @@
 
 :root{
     --baseColor: #784cfb;
+    --color-2: #fe5b3d;
+    --color-3:#ffac38;
+    --color-4:#444;
     --fontLogo: 'Courgette', cursive;
 }
 
@@ -21,4 +24,132 @@ body{
     min-height: 100vh;
     margin-top: -6rem;
     padding-top: 6rem;
+}
+
+ /* banner */
+ .banner {
+    min-height: 70vh;
+    background:url(https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=75ba) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    padding-top: 8rem;
+}
+/* .banner .content {
+    text-align: center;
+    background:transparent;
+    border-radius: .5rem;
+    box-shadow: var(--color-4);
+    padding:3rem;
+    max-width: 50rem;
+}
+.banner .content h3 {
+    font-size: 4rem;
+    color: var(--color-4);
+    text-transform: uppercase;
+} */
+.banner .content img {
+    width: 300px;
+}
+
+/* contact */
+#kontak .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+.kontak-kiri {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+}
+.kontak-kiri form input ,textarea {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 238);
+    font-size: 16px;
+    color: #000;
+}
+.kontak-kiri form input::placeholder,
+textarea::placeholder {
+    color: #000;
+}
+#kontak form input[type="submit"] {
+    background-color: var(--color-4);
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--c);
+    transition: 0.5s, color 0.5s;
+    margin: 20px auto;
+    cursor: pointer;
+    padding: 8px 35px;
+}
+#kontak form input[type="submit"]:hover {
+    color: var(--baseColor);
+    background-color: var(--color-4);
+}
+.kontak-kanan {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+}
+.kontak-kanan h2 {
+    font-size: 40px;
+}
+.kontak-kanan p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+.kontak-kanan p.icon {
+    margin-top: 10px;
+    display: inline-block;
+    width: fit-content;
+    padding: 3px 11px;
+}
+.kontak-kanan ul {
+    list-style: none;
+    margin-top: 5px;
+}
+.kontak-kanan ul li {
+    display: inline-block;
+}
+.kontak-kanan ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.5s transform 0.5s;
+    color: #d6d6d6;
+}
+.kontak-kanan ul li a:hover {
+    color: var(--color-4);
+    transform: translateY(-8px);
+}
+.kontak-title {
+    color: var(--color-4);
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 60px;
+    font-weight: 800;
+}
+.kontak-title span {
+    color:var(--color-4);
+}
+span.icon,
+.icon {
+    background-color: var(--baseColor);
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 4px;
+    color: #eee;
 }
