@@ -1,0 +1,116 @@
+:root{
+    --baseColor: #FF9B50;
+    --color1: #EDF1D6;
+    --color2: #9DC08B;
+    --color3: #609966;
+    --color4: #40513B;
+    --fontLogo: 'Courgette', cursive;
+    --bg: linear-gradient(to top, var(--color3) 0%, var(--color4) 100%);;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #9DC08B;
+}
+
+.container-fluid{
+    background-color: #EDF1D6;
+    padding-left: 50px;
+}
+
+.hero-image img {
+    height: 100%;
+    width: 100%;
+  }
+
+.jumbotron{
+    background-color: #9DC08B;
+}
+
+.hero-image{
+    width: 600px;
+    height: 400px;
+    padding: 0;
+    overflow:hidden;
+    border: 20px solid #ecf1d6 ;
+
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    animation: slide 25s infinite;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+  
+/* features*/
+.content2{
+    text-align: center;
+}
+.features-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.features-img{
+    width: 90px;
+    height: 90px;
+}
+.features-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    /* border: 2px solid var(--secColor); */
+}
+.features-container .box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 35px;
+    /* box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; */
+}
+.features-container .box1 h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+/* .features-container .box1 p{
+    font-style: italic;
+} */
