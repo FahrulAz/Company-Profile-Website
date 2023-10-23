@@ -2,9 +2,7 @@
 
 :root{
     --baseColor: #784cfb;
-    --color-2: #fe5b3d;
-    --color-3:#ffac38;
-    --color-4:#444;
+    --secColor:#444;
     --fontLogo: 'Courgette', cursive;
 }
 
@@ -26,34 +24,18 @@ body{
     padding-top: 6rem;
 }
 
- /* banner */
+ /* wallpaper banner */
  .banner {
-    min-height: 70vh;
-    background:url(https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=75ba) no-repeat;
+    min-height: 55vh;
+    background:url(../img/wall-banner.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     display: grid;
     place-items: center;
-    padding-top: 8rem;
-}
-/* .banner .content {
-    text-align: center;
-    background:transparent;
-    border-radius: .5rem;
-    box-shadow: var(--color-4);
-    padding:3rem;
-    max-width: 50rem;
-}
-.banner .content h3 {
-    font-size: 4rem;
-    color: var(--color-4);
-    text-transform: uppercase;
-} */
-.banner .content img {
-    width: 300px;
+    /* padding-top: 8rem; */
 }
 
-/* contact */
+/* contact section */
 #kontak .row {
     display: flex;
     flex-direction: row;
@@ -82,7 +64,7 @@ textarea::placeholder {
     color: #000;
 }
 #kontak form input[type="submit"] {
-    background-color: var(--color-4);
+    background-color: var(--secColor);
     width: fit-content;
     font-size: 20px;
     font-weight: 400;
@@ -96,7 +78,7 @@ textarea::placeholder {
 }
 #kontak form input[type="submit"]:hover {
     color: var(--baseColor);
-    background-color: var(--color-4);
+    background-color: var(--secColor);
 }
 .kontak-kanan {
     display: flex;
@@ -132,18 +114,18 @@ textarea::placeholder {
     color: #d6d6d6;
 }
 .kontak-kanan ul li a:hover {
-    color: var(--color-4);
+    color: var(--secColor);
     transform: translateY(-8px);
 }
 .kontak-title {
-    color: var(--color-4);
+    color: var(--secColor);
     margin-top: 15px;
     margin-left: 25px;
     font-size: 60px;
     font-weight: 800;
 }
 .kontak-title span {
-    color:var(--color-4);
+    color:var(--secColor);
 }
 span.icon,
 .icon {

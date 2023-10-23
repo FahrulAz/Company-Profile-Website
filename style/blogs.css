@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&display=swap");
+
+:root {
+  --baseColor: #784cfb;
+  --color-2: #fe5b3d;
+  --color-3: #ffac38;
+  --color-4: #444;
+  --fontLogo: "Courgette", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: beige;
+}
+
+/* main content  */
+.hero {
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 6rem;
+}
+
+/* wallpaper banner */
+.banner {
+  min-height: 55vh;
+  background: url(../img/wall-banner.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center;
+  /* padding-top: 8rem; */
+}
+/* .banner .content {
+    text-align: center;
+    background:transparent;
+    border-radius: .5rem;
+    box-shadow: var(--color-4);
+    padding:3rem;
+    max-width: 50rem;
+}
+.banner .content h3 {
+    font-size: 4rem;
+    color: var(--color-4);
+    text-transform: uppercase;
+} */
+.banner .content img {
+  width: 300px;
+}
+
+/* blogs section */
+.card > img {
+  width: 16rem;
+  height: 12rem;
+  padding: 10px;
+}
+
+.card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
