@@ -27,14 +27,14 @@ body {
   padding-top: 6rem;
 }
 
-.banner-container {
+.mySwiper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.banner-container .banner {
+.mySwiper .banner {
   background: linear-gradient(-55deg, #40513b 29%, #609966 68%, #9dc08b 29%);
   border-radius: 5px;
   margin: 10px;
@@ -49,11 +49,12 @@ body {
   padding: 10px;
 }
 
-.banner-container .banner .content {
-  width: 500px;
+.swiper-wrapper {
+  width: 100%;
+  height: 500px;
 }
 
-.banner-container .banner .content h1 {
+.mySwiper .banner .content h1 {
   color: white;
 }
 
