@@ -18,11 +18,13 @@ body{
 .container-fluid{
     background-color: #EDF1D6;
     padding-left: 50px;
+    /* animation: fade-up 0.7s; */
 }
 
 .hero-image img {
     height: 100%;
     width: 100%;
+    animation: fade-up 0.7s;
   }
 
 .jumbotron{
@@ -43,6 +45,7 @@ body{
     height: 100%;
     margin: 0px;
     display: flex;
+    animation: fade-up 0.5s 0.4s;
     animation: slide 25s infinite;
 }
 
@@ -83,6 +86,18 @@ body{
     gap: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    animation: fade-up 0.5s;
+}
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+        
+    }
 }
 .features-img{
     width: 90px;
