@@ -31,11 +31,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.car > img {
-  width: 500px;
-  height: 480px;
+  flex-wrap: wrap;
 }
 
 .banner-container .banner {
@@ -50,7 +46,9 @@ body {
   overflow: hidden;
   width: 100%;
   color: white;
+  padding: 10px;
 }
+
 .banner-container .banner .content {
   width: 500px;
 }
@@ -68,7 +66,7 @@ body {
 .content h1 {
   font-weight: 800;
   font-size: 2rem;
-  color: #40513b;
+  color: var(--color4);
 }
 .services-container {
   display: flex;
