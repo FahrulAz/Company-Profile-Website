@@ -1,41 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&display=swap');
 
-:root{
-    --baseColor: #784cfb;
-    --secColor:#444;
+:root {
+    --baseColor: #FF9B50;
+    --color1: #EDF1D6;
+    --color2: #9DC08B;
+    --color3: #609966;
+    --color4: #40513B;
     --fontLogo: 'Courgette', cursive;
+    --bg: linear-gradient(to top, var(--color3) 0%, var(--color4) 100%);
+    --bg2: linear-gradient(-55deg, #40513b 29%, #609966 68%, #9dc08b 29%);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Nunito Sans', sans-serif;
     background-color: beige;
 }
 
 
 /* main content  */
-.hero{
+.hero {
     min-height: 100vh;
     margin-top: -6rem;
     padding-top: 6rem;
 }
 
- /* wallpaper banner */
- .banner {
-    min-height: 55vh;
-    background:url(../img/wall-banner.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    place-items: center;
-    /* padding-top: 8rem; */
+ /* banner */
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-img > img {
+    width: 500px;
+    height: 480px;
+}
+.banner-container .banner {
+    background: var(--bg2);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #0005;
+    overflow: hidden;
+    width: 100%;
+    color: var(--baseColor);
+}
+.banner-container .banner .content {
+    width: 500px;
+}
+.banner-container .banner .content h1 {
+    color: #ffff;
+}
+.banner-container .banner .content h1 {
+    color: #ffff;
+}
+.text {
+    margin-top: 1rem;
+    text-align: center;
+}
+.text h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #ffff;
+}
+.text p {
+    color: var(--baseColor);
+    font-size: 1 5rem;
+    font-weight: 400;
 }
 
 /* contact section */
+#kontak {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 #kontak .row {
     display: flex;
     flex-direction: row;
@@ -55,30 +100,31 @@ body{
     border-radius: 10px;
     border: none;
     outline: none;
-    background-color: rgb(255, 255, 238);
+    background-color: #ffffee;
     font-size: 16px;
-    color: #000;
+    color: var(--color4);
 }
 .kontak-kiri form input::placeholder,
 textarea::placeholder {
-    color: #000;
+    color: var(--color4);
 }
 #kontak form input[type="submit"] {
-    background-color: var(--secColor);
+    background-color: var(--color3);
     width: fit-content;
     font-size: 20px;
     font-weight: 400;
-    color: #fff;
+    color: #ffff;
+    border: 1px solid var(--color3);
     border-radius: 10px;
-    border: 1px solid var(--c);
     transition: 0.5s, color 0.5s;
     margin: 20px auto;
     cursor: pointer;
     padding: 8px 35px;
 }
 #kontak form input[type="submit"]:hover {
-    color: var(--baseColor);
-    background-color: var(--secColor);
+    color: var(--color4);
+    background: var(--color2);
+    border: 1px solid var(--color2);
 }
 .kontak-kanan {
     display: flex;
@@ -89,6 +135,7 @@ textarea::placeholder {
     font-size: 40px;
 }
 .kontak-kanan p {
+    color: var(--color4);
     font-size: 20px;
     font-weight: 400;
     margin-left: 30px;
@@ -111,27 +158,26 @@ textarea::placeholder {
     text-decoration: none;
     display: inline-block;
     transition: color 0.5s transform 0.5s;
-    color: #d6d6d6;
+    color: #ffffee;
 }
 .kontak-kanan ul li a:hover {
-    color: var(--secColor);
+    color: var(--color2);
     transform: translateY(-8px);
 }
 .kontak-title {
-    color: var(--secColor);
+    color: var(--color4);
     margin-top: 15px;
     margin-left: 25px;
     font-size: 60px;
     font-weight: 800;
 }
 .kontak-title span {
-    color:var(--secColor);
+    color:var(--color4);
 }
 span.icon,
 .icon {
-    background-color: var(--baseColor);
+    background-color: var(--color3);
     display: inline-block;
     padding: 0 5px;
     border-radius: 4px;
-    color: #eee;
 }
