@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/logo.png" />
+    <link rel="icon" href="img/logo-navbar.svg" />
     <title>RentalYuk</title>
+
+  <!--swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
     <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -18,120 +21,155 @@
     <header id="header"></header>
 
     <div class="hero">
-      <!-- wallpaper banner  -->
-      <section class="banner-container">
-        <div class="banner">
-          <div class="car">
-            <img src="/img/car.png" alt="mobil" />
+      <!-- banner  -->
+      <section class="swiper mySwiper">
+       <div class="swiper-wrapper">
+        <div class="banner swiper-slide">
+          <div class="banner-img">
+            <img src="/img/car 2.png" alt="mobil" />
           </div>
-          <div class="content">
-            <h1>October Sale</h1>
-            <h3>25% OFF</h3>
-            <p>offer ends October 31th, 2023</p>
+          <div class="text">
+            <h2>Dapatkan Penawaran Spesial</h2>
+            <h5>UP TO 50% OFF</h5>
+            <p>*Hanya di RentalYuk</p>
             <a href="#" class="btn btn-dark">Get Offer</a>
+          </div>
+        </div>
+          <div class="banner swiper-slide">
+            <div class="banner-img">
+              <!-- <img src="/img/car.png" alt="mobil" style="height: 480px; width: 500px;" /> -->
+              <img src="/img/car 2.png" alt="mobil" />
+            </div>
+            <div class="text">
+              <h2>October Sale</h2>
+              <h5>25% OFF</h5>
+              <p>*Offer ends October 31th, 2023</p>
+              <a href="#" class="btn btn-dark">Get Offer</a>
+            </div>
+          </div>
+          <div class="banner swiper-slide">
+            <div class="banner-img">
+              <!-- <img src="/img/car 3.png" alt="mobil" style="width: 450px;" /> -->
+              <img src="/img/car 2.png" alt="mobil" />
+            </div>
+            <div class="text">
+              <h2>Halloween Party</h2>
+              <h5>Special Price (00:00 AM)</h5>
+              <P>*October 31th, 2023</P>
+              <a href="#" class="btn btn-dark">Get Offer</a>
+            </div>
+            <!-- <div class="banner-img">
+              <img src="/img/car 4.png" alt="mobil" style="width: 450px;" />
+            </div> -->
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </section>
+    
+      <!-- services section  -->
+      <section class="services-container">
+        <div class="text">
+            <span>Our Services</span>
+            <h1>Armada Kami</h1>
+            <div class="services-img">
+              <img class="mb-5" src="img/logo-navbar.svg" alt="logo" style="width: 60px;">
+            </div>
+        </div>
+      </section>
+
+      <!-- regular services -->
+      <section class="regular-container">
+        <div class="text">
+          <span>Regular Services</span>
+          <h1>Explore Penawaran <br> Regular Teratas</h1>
+        </div>
+        <div class="regular">
+          <div class="box">
+            <div class="box-img">
+              <img src="img/car 6.png"alt="mobil">
+            </div>
+            <p>2023</p>
+            <h3>REGULAR 1</h3>
+            <h2>100000<span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img src="img/car 6.png"alt="mobil">
+            </div>
+            <p>2023</p>
+            <h3>REGULAR 2</h3>
+            <h2>200000<span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img src="img/car 6.png"alt="mobil">
+            </div>
+            <p>2023</p>
+            <h3>REGULAR 3</h3>
+            <h2>300000<span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img src="img/car 6.png"alt="mobil">
+            </div>
+            <p>2023</p>
+            <h3>REGULAR 4</h3>
+            <h2>400000<span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- premium services -->
+      <section class="premium-container">
+        <div class="text">
+          <span>Premium Services</span>
+          <h1>Explore Penawaran <br> Premium Teratas</h1>
+        </div>
+        <div class="premium">
+          <div class="box">
+            <div class="box-img">
+              <img src="img/car 7.png"alt="mobil">
+            </div>
+            <p>2023</p>
+            <h3>PREMIUM 1</h3>
+            <h2>500000<span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img src="img/car 7.png"alt="mobil">
+            </div>
+            <p>2023</p>
+            <h3>PREMIUM 2</h3>
+            <h2>600000<span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img src="img/car 7.png"alt="mobil">
+            </div>
+            <p>2023</p>
+            <h3>PREMIUM 3</h3>
+            <h2>700000<span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <img src="img/car 7.png"alt="mobil">
+            </div>
+            <p>2023</p>
+            <h3>PREMIUM 4</h3>
+            <h2>800000<span>/month</span></h2>
+            <a href="#" class="btn">Rent Now</a>
           </div>
         </div>
       </section>
     </div>
-
-    <!-- services section  -->
-      <section class="services">
-        <div class="content">
-            <h1>Our Services</h1>
-        </div>
-
-    <!-- regular -->
-    <section class="regular">
-        <div class="content">
-            <span>Regular Services</span>
-            <h1>Explore Penawaran <br> Regular Teratas</h1>
-        </div>
-        <div class="regular-container">
-            <div class="box">
-            <div class="box-img">
-                <img src="https://png.pngtree.com/png-clipart/20210725/original/pngtree-car-white-vehicle-trolley-sports-car-png-image_6561574.jpg"alt="">
-            </div>
-            <p>2023</p>
-            <h3>REGULAR 1</h3>
-            <h2>500000<span>/month</span></h2>
-            <a href="#" class="btn">Rent Now</a>
-            </div>
-            <div class="box">
-                <div class="box-img">
-                <img src="https://png.pngtree.com/png-clipart/20210725/original/pngtree-car-white-vehicle-trolley-sports-car-png-image_6561574.jpg"alt="">
-                </div>
-                <p>2023</p>
-                <h3>REGULAR 2</h3>
-                <h2>500000<span>/month</span></h2>
-                <a href="#" class="btn">Rent Now</a>
-            </div>
-            <div class="box">
-                <div class="box-img">
-                <img src="https://png.pngtree.com/png-clipart/20210725/original/pngtree-car-white-vehicle-trolley-sports-car-png-image_6561574.jpg"alt="">
-                </div>
-                <p>2023</p>
-                <h3>REGULAR 3</h3>
-                <h2>500000<span>/month</span></h2>
-                <a href="#" class="btn">Rent Now</a>
-            </div>
-            <div class="box">
-                <div class="box-img">
-                <img src="https://png.pngtree.com/png-clipart/20210725/original/pngtree-car-white-vehicle-trolley-sports-car-png-image_6561574.jpg"alt="">
-                </div>
-                <p>2023</p>
-                <h3>REGULAR 4</h3>
-                <h2>500000<span>/month</span></h2>
-                <a href="#" class="btn">Rent Now</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- premium -->
-    <section class="premium">
-        <div class="content">
-            <span>Premium Services</span>
-            <h1>Explore Penawaran <br> Premium Teratas</h1>
-        </div>
-        <div class="premium-container">
-            <div class="box">
-            <div class="box-img">
-                <img src="https://png.pngtree.com/png-clipart/20210725/original/pngtree-car-white-vehicle-trolley-sports-car-png-image_6561574.jpg"alt="">
-            </div>
-            <p>2023</p>
-            <h3>PREMIUM 1</h3>
-            <h2>700000<span>/month</span></h2>
-            <a href="#" class="btn">Rent Now</a>
-            </div>
-            <div class="box">
-                <div class="box-img">
-                <img src="https://png.pngtree.com/png-clipart/20210725/original/pngtree-car-white-vehicle-trolley-sports-car-png-image_6561574.jpg"alt="">
-                </div>
-                <p>2023</p>
-                <h3>PREMIUM 2</h3>
-                <h2>700000<span>/month</span></h2>
-                <a href="#" class="btn">Rent Now</a>
-            </div>
-            <div class="box">
-                <div class="box-img">
-                <img src="https://png.pngtree.com/png-clipart/20210725/original/pngtree-car-white-vehicle-trolley-sports-car-png-image_6561574.jpg"alt="">
-                </div>
-                <p>2023</p>
-                <h3>PREMIUM 3</h3>
-                <h2>700000<span>/month</span></h2>
-                <a href="#" class="btn">Rent Now</a>
-            </div>
-            <div class="box">
-                <div class="box-img">
-                <img src="https://png.pngtree.com/png-clipart/20210725/original/pngtree-car-white-vehicle-trolley-sports-car-png-image_6561574.jpg"alt="">
-                </div>
-                <p>2023</p>
-                <h3>PREMIUM 4</h3>
-                <h2>700000<span>/month</span></h2>
-                <a href="#" class="btn">Rent Now</a>
-            </div>
-        </div>
-    </section>
-  </div>
 
     <!-- import dari file footer.html -->
     <!-- footer  -->
@@ -139,6 +177,10 @@
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <!--swiper-->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   
     <script src="script/home.js"></script>
+    <script src="script/blogs.js"></script>
   </body>
 </html>
