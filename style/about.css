@@ -25,6 +25,8 @@ body{
     height: 100%;
     width: 100%;
     animation: fade-up 0.7s;
+    border:1px solid #000000;
+
   }
 
 .jumbotron{
@@ -129,3 +131,39 @@ body{
 /* .features-container .box1 p{
     font-style: italic;
 } */
+
+.logos{
+    background-color: #000000;
+    margin: 100px;
+    background-image: url(/img/car\ park.jpeg);
+    background-size: cover;  
+    border: solid #ecf1d6;  
+    border-radius: 10px;
+}
+.logos img{
+    opacity: 1;
+    margin-right: 50px;
+    
+}
+.toyota img{
+    width: 200px;
+    height: 200px;
+}
+.bmw img{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    /* margin-left: 100px; */
+}
+.mcd img{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    /* margin-left: 170px; */
+}
+.mzd img{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    /* margin-left: 150px; */
+}
