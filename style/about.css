@@ -5,33 +5,31 @@
     --color3: #609966;
     --color4: #40513B;
     --fontLogo: 'Courgette', cursive;
-    --bg: linear-gradient(to top, var(--color3) 0%, var(--color4) 100%);;
+    --bg: linear-gradient(to top, var(--color3) 0%, var(--color4) 100%);
+    --bg2: linear-gradient(-55deg, #40513b 29%, #609966 68%, #9dc08b 29%);
 }
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: #9DC08B;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: var(--color2);
 }
 
 .container-fluid{
-    background-color: #EDF1D6;
+    background-color: var(--color1);
     padding-left: 50px;
-    /* animation: fade-up 0.7s; */
 }
 
 .hero-image img {
     height: 100%;
     width: 100%;
-    animation: fade-up 0.7s;
-    border:1px solid #000000;
-
   }
 
-.jumbotron{
-    background-color: #9DC08B;
-}
+/* .jumbotron{
+    background-color: var(--color2);
+} */
 
 .hero-image{
     width: 600px;
@@ -42,12 +40,23 @@ body{
 
 }
 
+.hero-image h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--color4);
+}
+
+.hero-image p {
+    color: var(--color4);
+    font-size: 1 5rem;
+    font-weight: 400;
+}
+
 .wrapper{
     width: 100%;
     height: 100%;
     margin: 0px;
     display: flex;
-    animation: fade-up 0.5s 0.4s;
     animation: slide 25s infinite;
 }
 
@@ -79,65 +88,104 @@ body{
 }
   
 /* features*/
-.content2{
+.text{
     text-align: center;
 }
-.features-container{
+.text h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--color4);
+}
+.text span{
+    color: var(--color4);
+}
+.about{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,auto));
     gap: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    animation: fade-up 0.5s;
 }
-@keyframes fade-up{
-    0%{
-        opacity: 0;
-        transform: translateY(30px) scale(0.9);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-        
-    }
-}
-.features-img{
+.about-img{
     width: 90px;
     height: 90px;
 }
-.features-img img{
+.about-img img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    /* border: 2px solid var(--secColor); */
 }
-.features-container .box1{
+.about .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 20px;
     margin: 35px;
-    /* box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
-    border-radius: 20px; */
 }
-.features-container .box1 h2{
-    font-size: 1.1rem;
-    font-weight: 600;
+.about .box h2{
+    color: var(--color4);
+    font-size: 1.2rem;
+    font-weight: 800;
     margin: 0.5rem 0 0.5rem;
 }
-/* .features-container .box1 p{
-    font-style: italic;
-} */
+.about .box p{
+    color: var(--color4);
+    font-size: 1 5rem;
+    font-weight: 400;
+}
 
+/* reviews */
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.reviews-img{
+    width: 70px;
+    height: 70px;
+}
+.reviews-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--color3);
+}
+.reviews .box{
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 35px;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.reviews .box h2{
+    color: var(--color4);
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: 0.5rem 0 0.5rem;
+}
+.reviews .box p{
+    color: var(--color4);
+    font-size: 1 5rem;
+    font-weight: 400;
+    font-style: italic;
+}
 .logos{
-    background-image: url(/img/car\ park.jpeg);
+    /* background-image: url(/img/car\ park.jpeg); */
     background-size: cover;  
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    
     margin: 100px;
-    border: solid #5162f5;  
+    border: solid #609966;  
     border-radius: 10px;
 }
 .logos img{

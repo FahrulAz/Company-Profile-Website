@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&display=swap');
 
 :root{
-    --baseColor: #e1fb4c;
+    --baseColor: #FF9B50;
+    --color1: #EDF1D6;
+    --color2: #9DC08B;
+    --color3: #609966;
+    --color4: #40513B;
     --fontLogo: 'Courgette', cursive;
 }
 
 /* style nav  */
 .m-navbar{
-    background-color: #609966 !important;
+    background-color: var(--color4) !important;
     backdrop-filter: blur(4px);
 }
 .m-navbar .offcanvas{
     height: 100vh;
+    background-color: var(--color4);
 }
 .m-logo{
     font-size: 1.6rem;
@@ -19,24 +24,27 @@
     font-family: var(--fontLogo);
     font-weight: 700;
 }
+.m-logo:hover{
+    color: var(--color1);
+}
 .m-logo span{
-        color: rgb(39, 39, 39);
+        color: #EDF1D6;
 }
 .navbar-nav a{
     font-weight: 700;
+    color: var(--color1);
     transition: 0.5s;
     transition: all .55s ease;
-    color: #ffffff;
 }
 .navbar-nav a:hover{
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: var(--color4);
     border-bottom: 2px solid rgb(255, 255, 255);
     background-color: var(--baseColor);
 
 }
 .navbar-nav a.actived{
-    color: #ffffff;
+    color: #ffff;
     background-color: var(--baseColor);
     margin: -10px 0;
     padding: 17px 10px;
