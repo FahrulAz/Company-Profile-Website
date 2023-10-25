@@ -157,8 +157,8 @@ textarea::placeholder {
 }
 .kontak-title {
     color: var(--color4);
-    margin-top: 1rem;
-    margin-left: 1.6rem;
+    margin-top: 1.2rem;
+    margin-left: 1.8rem;
 }
 .icon {
     background-color: var(--color3);
