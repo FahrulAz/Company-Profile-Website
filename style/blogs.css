@@ -100,7 +100,7 @@ body {
   color: var(--color4);
 }
 
-/* regular services */
+/* regular category */
 .regular {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
@@ -161,7 +161,7 @@ body {
   border: solid 1px var(--color2);
 }
 
-/* premium services */
+/* premium category */
 .premium-container {
   margin-top: 4rem;
 }

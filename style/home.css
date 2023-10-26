@@ -7,7 +7,8 @@
     --color3: #609966;
     --color4: #40513B;
     --fontLogo: 'Courgette', cursive;
-    --bg: linear-gradient(to top, var(--color3) 0%, var(--color4) 100%);;
+    --bg: linear-gradient(to top, var(--color3) 0%, var(--color4) 100%);
+    --bg2: linear-gradient(-55deg, #40513b 29%, #609966 68%, #9dc08b 29%);
 }
 
 *{ 

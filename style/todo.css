@@ -14,7 +14,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -55,7 +54,7 @@ body {
   color: var(--color4);
   float: left;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
   cursor: pointer;
   transition: 0.3s;
@@ -74,7 +73,7 @@ input {
   width: 75%;
   padding: 10px;
   float: left;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
 }
 
@@ -101,7 +100,8 @@ ul li {
   padding: 12px 8px 12px 40px;
   list-style-type: none;
   background: #eee;
-  font-size: 18px;
+  font-size: 1.1rem;
+  font-weight: 400;
   transition: 0.2s;
   
   /* make the list items unselectable */
