@@ -193,11 +193,11 @@ textarea::placeholder {
     .kontak-kanan h2 {
         font-size: 1.6rem;
     }
-    .kontak-kanan p, .icon {
+    .kontak-kanan p {
         font-size: 1.2rem;
     }
     .kontak-kanan ul li a {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .kontak-kiri, .kontak-kanan {
         flex-basis: 90%;
@@ -227,11 +227,11 @@ textarea::placeholder {
     .kontak-kanan h2 {
         font-size: 1.4rem;
     }
-    .kontak-kanan p, .icon {
+    .kontak-kanan p {
         font-size: 1.1rem;
     }
     .kontak-kanan ul li a {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     .kontak-kiri, .kontak-kanan {
         flex-basis: 90%;
@@ -261,11 +261,11 @@ textarea::placeholder {
     .kontak-kanan h2 {
         font-size: 1.2rem;
     }
-    .kontak-kanan p, .icon {
+    .kontak-kanan p {
         font-size: 1rem;
     }
     .kontak-kanan ul li a {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     .kontak-kiri, .kontak-kanan {
         flex-basis: 90%;
