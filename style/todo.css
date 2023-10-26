@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&display=swap");
+
+:root {
+  --baseColor: #ff9b50;
+  --color1: #edf1d6;
+  --color2: #9dc08b;
+  --color3: #609966;
+  --color4: #40513b;
+  --fontLogo: "Courgette", cursive;
+  --bg: linear-gradient(to top, var(--color3) 0%, var(--color4)  100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: beige;
+}
+
+/*todo*/
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background-color: var(--baseColor);
+  margin: 100px auto;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2 {
+  color: var(--color3);
+  align-items: center;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color1);
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: var(--color4);
+  color: var(--baseColor);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+ul li {
+  list-style: circle;
+  font-size: 17px;
+  padding: 12px 8px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li ::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  top: 10px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: var(--color4);
+  text-decoration: line-through;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: var(--color4);
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: var(--color1);
+}
