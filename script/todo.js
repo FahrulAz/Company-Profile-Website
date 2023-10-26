@@ -68,7 +68,7 @@ function loadTasksFromLocalStorage() { // Function
 
 loadTasksFromLocalStorage();
 
-document.getElementById("addButton").addEventListener('click', addTask);
+document.getElementById("myButton").addEventListener('click', addTask);
 
 myInput.addEventListener('keyup', function(event) {
   if (event.key === 'Enter') { // Strict Equality Operator (===)

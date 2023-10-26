@@ -35,10 +35,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-.banner-img > img {
-    width: 750px;
-    height: 450px;
-}
 .banner-container .banner {
     background: var(--bg2);
     border-radius: 5px;
@@ -50,6 +46,10 @@ body {
     box-shadow: 0 5px 10px #0005;
     overflow: hidden;
     width: 100%;
+}
+.banner-img > img {
+    width: 750px;
+    height: 450px;
 }
 .text {
     margin-top: 1rem;
