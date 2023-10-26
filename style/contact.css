@@ -29,7 +29,7 @@ body {
     padding-top: 6rem;
 }
 
- /* banner */
+/* banner */
 .banner-container {
     display: flex;
     align-items: center;
@@ -56,13 +56,16 @@ body {
     text-align: center;
 }
 .text h2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
     font-weight: 800;
     font-size: 2rem;
     color: var(--color1);
 }
 .text p {
+    margin-bottom: 2rem;
     color: var(--baseColor);
-    font-size: 1 5rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
@@ -91,7 +94,7 @@ body {
     border: none;
     outline: none;
     background-color: #ffffee;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--color4);
 }
 .kontak-kiri form input::placeholder,
@@ -101,7 +104,7 @@ textarea::placeholder {
 #kontak form input[type="submit"] {
     background-color: var(--color3);
     width: fit-content;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--color1);
     border: 1px solid var(--color3);
@@ -132,20 +135,18 @@ textarea::placeholder {
     margin-left: 2rem;
 }
 .kontak-kanan p.icon {
-    margin-top: 10px;
     display: inline-block;
     width: fit-content;
     padding: 3px 11px;
 }
 .kontak-kanan ul {
     list-style: none;
-    margin-top: 5px;
 }
 .kontak-kanan ul li {
     display: inline-block;
 }
 .kontak-kanan ul li a {
-    font-size: 15px;
+    font-size: 1rem;
     text-decoration: none;
     display: inline-block;
     transition: color 0.5s transform 0.5s;
@@ -165,4 +166,108 @@ textarea::placeholder {
     display: inline-block;
     padding: 0 5px;
     border-radius: 4px;
+}
+
+/* media query */
+/* large */
+@media (max-width: 992px) {
+    .banner-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .text h2 {
+        font-size: 1.6rem;
+    }
+    .text p {
+        font-size: 1.1rem;
+    }
+    .kontak-kiri {
+        margin-left: 1.8rem;
+    }
+    .kontak-kiri form input ,textarea {
+        font-size: 1rem;
+    }
+    #kontak form input[type="submit"] {
+        font-size: 0.9rem;
+    }
+    .kontak-kanan h2 {
+        font-size: 1.6rem;
+    }
+    .kontak-kanan p, .icon {
+        font-size: 1.2rem;
+    }
+    .kontak-kanan ul li a {
+        font-size: 0.8rem;
+    }
+    .kontak-kiri, .kontak-kanan {
+        flex-basis: 90%;
+    }
+}
+/* tablet */
+@media (max-width: 768px) {
+    .banner-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .text h2 {
+        font-size: 1.4rem;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+    .kontak-kiri {
+        margin-left: 1.8rem;
+    }
+    .kontak-kiri form input ,textarea {
+        font-size: 0.9rem;
+    }
+    #kontak form input[type="submit"] {
+        font-size: 0.8rem;
+    }
+    .kontak-kanan h2 {
+        font-size: 1.4rem;
+    }
+    .kontak-kanan p, .icon {
+        font-size: 1.1rem;
+    }
+    .kontak-kanan ul li a {
+        font-size: 0.7rem;
+    }
+    .kontak-kiri, .kontak-kanan {
+        flex-basis: 90%;
+    }
+}
+/* mobile */
+@media (max-width: 576px) {
+    .banner-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .text h2 {
+        font-size: 1.2rem;
+    }
+    .text p {
+        font-size: 0.9rem;
+    }
+    .kontak-kiri {
+        margin-left: 1.8rem;
+    }
+    .kontak-kiri form input ,textarea {
+        font-size: 0.8rem;
+    }
+    #kontak form input[type="submit"] {
+        font-size: 0.7rem;
+    }
+    .kontak-kanan h2 {
+        font-size: 1.2rem;
+    }
+    .kontak-kanan p, .icon {
+        font-size: 1rem;
+    }
+    .kontak-kanan ul li a {
+        font-size: 0.6rem;
+    }
+    .kontak-kiri, .kontak-kanan {
+        flex-basis: 90%;
+    }
 }

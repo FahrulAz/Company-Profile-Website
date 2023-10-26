@@ -29,13 +29,12 @@ body {
 }
 
 /* banner */
-.mySwiper {
+.banner-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
-.mySwiper .banner {
+.banner-container .banner {
   background: var(--bg2);
   border-radius: 5px;
   margin: 1rem;
@@ -47,11 +46,13 @@ body {
   overflow: hidden;
   width: 100%;
 }
-.swiper-wrapper {
-  width: 100%;
+.banner-img > img {
+  width: 650px;
   height: 450px;
 }
-.mySwiper .banner .btn {
+.banner .btn {
+  font-size: 1rem;
+  font-weight: 400;
   margin-bottom: 1rem;
   justify-content: center;
   background: var(--color3);
@@ -59,7 +60,7 @@ body {
   border: solid 1px var(--color3);
   border-radius: 0.5rem;
 }
-.mySwiper .banner .btn:hover {
+.banner .btn:hover {
   color: var(--color4);
   background: var(--color2);
   border: 1px solid var(--color2);
@@ -87,13 +88,13 @@ body {
   color: var(--color1);
 }
 .text h5 {
-  font-weight: 500;
-  font-size: 1 5rem;
+  font-weight: 400;
+  font-size: 1.6rem;
   color: var(--color1);
 }
 .text p {
   color: var(--baseColor);
-  font-size: 1 5rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 .text span {
@@ -125,6 +126,8 @@ body {
   object-position: center;
 }
 .regular .box p {
+  font-size: 1rem;
+  font-weight: 400;
   padding: 0 10px;
   border: 1px solid var(--color4);
   width: 58px;
@@ -132,7 +135,7 @@ body {
   margin: 1rem 0 1rem;
 }
 .regular .box h3 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 .regular .box h2 {
@@ -142,11 +145,13 @@ body {
   margin: 0.2rem 0 0.5rem;
 }
 .regular .box h2 span {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--color4);
 }
 .regular .box .btn {
+  font-size: 1rem;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   background: var(--color3);
@@ -190,6 +195,8 @@ body {
   object-position: center;
 }
 .premium .box p {
+  font-size: 1rem;
+  font-weight: 400;
   padding: 0 10px;
   border: 1px solid var(--color4);
   width: 58px;
@@ -197,7 +204,7 @@ body {
   margin: 1rem 0 1rem;
 }
 .premium .box h3 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 .premium .box h2 {
@@ -207,11 +214,13 @@ body {
   margin: 0.2rem 0 0.5rem;
 }
 .premium .box h2 span {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--color4);
 }
 .premium .box .btn {
+  font-size: 1rem;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   background: var(--color3);
@@ -224,4 +233,144 @@ body {
   color: var(--color4);
   background: var(--color2);
   border: solid 1px var(--color2);
+}
+
+/* media query */
+/* large */
+@media (max-width: 992px) {
+    .banner-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .banner .btn {
+      font-size: 0.9rem;
+    }
+    .text h2 {
+      font-size: 1.6rem;
+    }
+    .text h1 {
+        font-size: 1.6rem;
+    }
+    .text h5 {
+      font-size: 1.5rem;
+    }
+    .text p {
+        font-size: 1.1rem;
+    }
+    .regular .box h3 {
+      font-size: 0.9rem;
+    }
+    .regular .box h2 {
+      font-size: 0.9rem;
+    }
+    .regular .box h2 span {
+      font-size: 0.8rem;
+    }
+    .premium .box h3 {
+      font-size: 0.9rem;
+    }
+    .premium .box h2 {
+      font-size: 0.9rem;
+    }
+    .premium .box h2 span {
+      font-size: 0.8rem;
+    }
+    .regular .box .btn {
+      font-size: 0.9rem;
+    }
+    .premium .box .btn {
+      font-size: 0.9rem;
+    }
+}
+/* tablet */
+@media (max-width: 768px) {
+    .banner-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .banner .btn {
+      font-size: 0.8rem;
+    }
+    .text h2 {
+      font-size: 1.4rem;
+    }
+    .text h1 {
+        font-size: 1.4rem;
+    }
+    .text h5 {
+      font-size: 1.3rem;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+    .regular .box h3 {
+      font-size: 0.8rem;
+    }
+    .regular .box h2 {
+      font-size: 0.8rem;
+    }
+    .regular .box h2 span {
+      font-size: 0.7rem;
+    }
+    .premium .box h3 {
+      font-size: 0.8rem;
+    }
+    .premium .box h2 {
+      font-size: 0.8rem;
+    }
+    .premium .box h2 span {
+      font-size: 0.6rem;
+    }
+    .regular .box .btn {
+      font-size: 0.7rem;
+    }
+    .premium .box .btn {
+      font-size: 0.8rem;
+    }
+}
+/* mobile */
+@media (max-width: 576px) {
+    .banner-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .banner .btn {
+      font-size: 0.7rem;
+    }
+    .text h2 {
+      font-size: 1.2rem;
+    }
+    .text h1 {
+        font-size: 1.2rem;
+    }
+    .text h5 {
+      font-size: 1.1rem;
+    }
+    .text p {
+        font-size: 0.9rem;
+    }
+    .regular .box h3 {
+      font-size: 0.7rem;
+    }
+    .regular .box h2 {
+      font-size: 0.7rem;
+    }
+    .regular .box h2 span {
+      font-size: 0.6rem;
+    }
+    .premium .box h3 {
+      font-size: 0.7rem;
+    }
+    .premium .box h2 {
+      font-size: 0.7rem;
+    }
+    .premium .box h2 span {
+      font-size: 0.6rem;
+    }
+    .regular .box .btn {
+      font-size: 0.7rem;
+    }
+    .premium .box .btn {
+      font-size: 0.7rem;
+    }
 }
