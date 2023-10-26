@@ -128,23 +128,38 @@ body {
     width: 75%;
     padding: 10px;
     float: left;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
   }
   
   /* Style the "Add" button */
   .addBtn {
-    padding: 10px;
+    padding: 9px;
     width: 25%;
     background: var(--color2);
     color: var(--color4);
     float: left;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 400;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
+    border: solid 1px var(--color2);
   }
   
   .addBtn:hover {
     background-color: var(--color3);
+  }
+
+  /* Style alert error message */
+  .error-message {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
   }

@@ -1,75 +1,77 @@
+var todoList = []; // JavaScript Object (Array)
 
-        // Create a "close" button and append it to each list item
-        var myNodelist = document.getElementsByTagName("LI");
-        var i;
-        for (i = 0; i < myNodelist.length; i++) {
-          var span = document.createElement("SPAN");
-          var txt = document.createTextNode("\u00D7");
-          span.className = "close";
-          span.appendChild(txt);
-          myNodelist[i].appendChild(span);
-        }
-        
-        // Click on a close button to hide the current list item
-        var close = document.getElementsByClassName("close");
-        var i;
-        for (i = 0; i < close.length; i++) {
-          close[i].onclick = function() {
-            var div = this.parentElement;
-            div.style.display = "none";
-          }
-        }
-        
-        // Add a "checked" symbol when clicking on a list item
-        var list = document.querySelector('ul');
-        list.addEventListener('click', function(ev) {
-          if (ev.target.tagName === 'LI') {
-            ev.target.classList.toggle('checked');
-          }
-        }, false);
-        
-        // Create a new list item when clicking on the "Add" button
-        function newElement() {
-          var li = document.createElement("li");
-          var inputValue = document.getElementById("myInput").value;
-          var t = document.createTextNode(inputValue);
-          li.appendChild(t);
-          if (inputValue === '') {
-            alert("You must write something!");
-          } else {
-            document.getElementById("myUL").appendChild(li);
-          }
-          document.getElementById("myInput").value = "";
-        
-          var span = document.createElement("SPAN");
-          var txt = document.createTextNode("\u00D7");
-          span.className = "close";
-          span.appendChild(txt);
-          li.appendChild(span);
-        
-          for (i = 0; i < close.length; i++) {
-            close[i].onclick = function() {
-              var div = this.parentElement;
-              div.style.display = "none";
-            }
-          }
-        }
+var myInput = document.getElementById("myInput");
+var myUL = document.getElementById("myUL");
 
-        // localStorage
-        // const userNameSpan = document.getElementById('myUL')
-        // const myInput = document.getElementById('myInput')
-        // const myButton = document.getElementById('addButton')
+function addTask() { // Function
+  var inputValue = myInput.value;
+  if (inputValue === '') { // Strict Equality Operator (===)
+    var errorDiv = document.createElement("div");
+    errorDiv.className = "error-message";
+    errorDiv.textContent = "input tidak boleh kosong!";
+    var hero = document.querySelector(".hero");
+    hero.appendChild(errorDiv);
+    setTimeout(function() {
+      hero.removeChild(errorDiv);
+    }, 3000);
+  } else {
+    var task = {
+      text: inputValue,
+      completed: false
+    };
+    todoList.push(task); // Function (push)
+    displayTasks();
+    saveTasksToLocalStorage();
+  }
+  myInput.value = '';
+}
 
-        // function saveUsername() {
-        // const currentInput = myInput.value
-        // userNameSpan.innerHTML = currentInput
+function displayTasks() { // Function
+  myUL.innerHTML = '';
+  todoList.forEach(function(task, index) { // forEach Function
+    var li = document.createElement("li");
+    li.textContent = task.text;
+    task.completed ? li.classList.add('checked') : li.classList.remove('checked'); // Ternary Operator (?:)
+    li.addEventListener('click', function() {
+      task.completed = !task.completed;
+      displayTasks();
+      saveTasksToLocalStorage();
+    });
+    var close = document.createElement("span");
+    close.textContent = "x";
+    close.className = "close";
+    close.addEventListener('click', function() {
+      removeTask(index);
+    });
+    li.appendChild(close);
+    myUL.appendChild(li);
+  });
+}
 
-        // localStorage.setItem('myUL', currentInput)
-        // }
+function removeTask(index) { // Filter Function
+  todoList.splice(index, 1);
+  displayTasks();
+  saveTasksToLocalStorage();
+}
 
-        // myButton.addEventListener('click', saveUsername)
+function saveTasksToLocalStorage() { // Function
+  localStorage.setItem('todoList', JSON.stringify(todoList));
+}
 
-        // const savedUsername = localStorage.getItem('myUL')
-        // if (saveUsername) {
-        // userNameSpan.innerHTML = savedUsername
-        // }
+function loadTasksFromLocalStorage() { // Function
+  var storedTasks = localStorage.getItem('todoList');
+  if (storedTasks) {
+    todoList = JSON.parse(storedTasks); // JSON Object
+    displayTasks();
+  }
+}
+
+loadTasksFromLocalStorage();
+
+document.getElementById("addButton").addEventListener('click', addTask);
+
+myInput.addEventListener('keyup', function(event) {
+  if (event.key === 'Enter') { // Strict Equality Operator (===)
+    addTask();
+  }
+});
