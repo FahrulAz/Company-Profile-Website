@@ -25,6 +25,7 @@ body{
 .hero-image img {
     height: 100%;
     width: 100%;
+    animation: fade-up 0.5s;
   }
 
 /* .jumbotron{
@@ -58,6 +59,16 @@ body{
     margin: 0px;
     display: flex;
     animation: slide 25s infinite;
+}
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
 }
 
 @keyframes slide {
@@ -180,45 +191,7 @@ body{
     font-weight: 400;
     font-style: italic;
 }
-.logos{
-    /* background-image: url(/img/car\ park.jpeg); */
-    background-size: cover;  
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    
-    margin: 100px;
-    border: solid #609966;  
-    border-radius: 10px;
-}
-.logos img{
-    opacity: 1;
-    margin-right: 50px;
-    
-}
-.toyota img{
-    width: 200px;
-    height: 200px;
-}
-.bmw img{
-    width: 100px;
-    height: 100px;
-    margin-top: 50px;
-    /* margin-left: 100px; */
-}
-
-.mcd img{
-    width: 100px;
-    height: 100px;
-    margin-top: 50px;
-    /* margin-left: 170px; */
-}
-.mzd img{
-    width: 150px;
-    height: 150px;
-    margin-top: 30px;
-    /* margin-left: 150px; */
-}
-
-/* Grow */
-.hvr-grow img {
+.hvr-grow{
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
@@ -234,3 +207,37 @@ body{
 .hvr-grow:active {
     transform: scale(1.1);
 }
+
+/* brand logo */
+.brand{
+    background-size: cover;  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    
+    margin: 4rem;
+    border-radius: 10px;
+}
+
+
+/* Grow */
+.hvr-grow img {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(184, 184, 5, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+/* mobile */
+@media (max-width: 576px) {
+    .car-img{
+        padding: 10px 10px;
+    }
+}
+
