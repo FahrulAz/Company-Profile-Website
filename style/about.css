@@ -182,7 +182,7 @@ body{
 }
 .brand img{
     opacity: 1;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
 .toyota img{
     width: 200px;
@@ -217,4 +217,11 @@ body{
 .hvr-grow:focus,
 .hvr-grow:active {
     transform: scale(1.1);
+}
+
+/* mobile */
+@media (max-width: 576px) {
+    .car-img{
+        padding: 10px 10px;
+    }
 }
