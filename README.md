@@ -6,3 +6,9 @@ This project uses vanilla javascript and boostrap 5 css framework.
 ---
 ## Preview App Here
 https://company-profile-website-h27blb1up-fahruls-projects.vercel.app/
+
+anggota kelompok 
+EKA NAZAR FAJRIANSYAH
+AHMAD FARUL AZIS
+RAFIF HUDA ADITYA
+VINDY FELYCIA LOVERITA
