@@ -8,6 +8,7 @@ EKA NAZAR FAJRIANSYAH
 AHMAD FARUL AZIS
 RAFIF HUDA ADITYA
 VINDY FELYCIA LOVERITA
+
 ---
 ## Preview App Here
 https://company-profile-website-h27blb1up-fahruls-projects.vercel.app/
